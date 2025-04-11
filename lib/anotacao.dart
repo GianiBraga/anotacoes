@@ -9,7 +9,7 @@ class Anotacao{
 
   // Responsável por passar de Map para Anotações
   factory Anotacao.fromMap(Map<String, dynamic> map){
-    return Anotacao(id: map['id'] as int, conteudo: ['conteudo'] as String,);
+    return Anotacao(id: map['id'] as int, conteudo: map['conteudo'] as String);
   }
 
   // Responsável por passar de Anotações para Map
